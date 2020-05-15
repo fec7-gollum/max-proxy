@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/ingredients/main.js', (req, res) => {
-  fetch('http://localhost:3001/dist/main.js', {
+  fetch('http://52.24.39.99:3001/dist/main.js', {
     method: 'GET',
   })
     .then((module) => module.arrayBuffer())
@@ -22,7 +22,7 @@ app.get('/ingredients/main.js', (req, res) => {
 });
 
 app.get('/top/main.js', (req, res) => {
-  fetch('http://localhost:4000/dist/bundle.js', {
+  fetch('FILL_IN', {
     method: 'GET',
   })
     .then((module) => module.arrayBuffer())
@@ -34,7 +34,7 @@ app.get('/top/main.js', (req, res) => {
 });
 
 app.get('/steps/main.js', (req, res) => {
-  fetch('http://localhost:3003/dist/bundle.js', {
+  fetch('FILL_IN', {
     method: 'GET',
   })
     .then((module) => module.arrayBuffer())
